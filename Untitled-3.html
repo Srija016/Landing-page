@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        header{
+            height:100vh;
+            width:100%;
+            background-image: url("https://i.pinimg.com/originals/4f/ab/18/4fab18d8c75e7ee3760bff4c94dfd775.jpg");
+            background-size: cover;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        nav{
+            width:100%;
+            height:100px;
+            display:flex;
+            font-weight: 110;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2.5em;
+            letter-spacing: 2.3px;
+            font-weight: 210;
+            font-style: bold;
+            padding-top: 1.75cm;
+            padding-right: 5.3cm;
+            color:rgb(6, 5, 6)
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            font-size: 21px;
+            padding-top: 1.4cm;
+            padding:10px 20px;
+            position:relative;
+            font-weight: 210;
+        }
+        .menu a:before{
+          content: '';
+          position: absolute;
+          top:0;
+          left:0;
+          width:0%;
+          height:100%;
+          border-bottom: 2px solid rgb(190, 130, 130);
+          transition:0.2s linear;
+        }
+        .menu a:hover:before{
+            width:90%;
+        }
+        .booking a{
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            padding-top: 1cm;
+            padding:10px 20px;
+            background: rgb(214, 19, 19);
+        }
+        .booking a:hover{
+            background: transparent;
+            border:2px solid rgb(49, 2, 2);
+        }
+        .caption{
+            max-width: 650px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-80%);
+            text-align: center;
+            color:rgb(100, 2, 2);
+        }
+        .caption span{
+            letter-spacing: 4px;
+            font-size: 1.5em;;
+        }
+        
+        .caption h1{
+            font-size:3.5em;
+            font-style:italic;
+            color: rgb(1, 2, 36);
+        }
+        .caption a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding-top: 2cm;
+            padding:10px 20px;
+            background: indianred;
+            border-radius:8px;
+        }
+        .caption a:hover{
+            background: transparent;
+            border:2px solid indianred;
+        }
+        #aboutus 
+        {
+            height:100vh;
+            width:100%;
+            background-image: url("https://us.123rf.com/450wm/9dreamstudio/9dreamstudio1804/9dreamstudio180402948/99773636-ingredients-for-tomato-sauce-cherry-tomatoes-garlic-black-pepper-on-white-background-top-view.jpg?ver=6");
+            filter:brightness(100%);
+            background-size: cover;
+            text-align: center;
+        }
+        #aboutus div>h1
+        {
+            padding-top: 1.5cm;;
+             font-size: 3em;
+             font-family: serif;
+             color: rgb(33, 1, 33);
+        }
+        #aboutus div>h2{
+            font-size: 2.5em;
+            font-family: serif;
+            color:rgb(106, 8, 8);
+        }
+        #aboutus section{
+            text-align: center;
+            font-size:1.8em;
+            color:rgb(0, 0, 0)
+        }
+        #ourservices{
+            width:100%;
+            height:90vh;
+            background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEhZwqB5IyGQ7LvTFISnuZAjhcznam0OztvA&s");
+            background-size: cover;
+            filter: brightness(100%);
+            text-align: justify;
+        }
+        #ourservices h1{
+            font-size: 3em;
+            padding-top: 1cm;
+            font-family: serif;
+            color: rgb(11, 205, 239);
+        }
+        #ourservices section{
+            font-size:1.25em;
+            color:rgb(253, 237, 237);
+        }
+        #packages{
+            height:90vh;
+            width:100%;
+            background-image: url("https://png.pngtree.com/background/20210710/original/pngtree-simple-takeaway-order-delivery-takeaway-promotional-poster-background-material-picture-image_1019284.jpg");
+            filter:brightness(100%);
+            background-size: cover;
+            text-align: center;
+        }
+        #packages h1{
+
+            text-align: center;
+            font-size: 3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: rgb(210, 51, 51);
+        }
+        #packages p{
+            font-size: 2em;
+            color:rgb(0, 0, 0);
+            text-align: center;
+
+        }
+        #contact
+        {
+            height:80vh;
+            width:100%;
+            background-color: rgb(143, 111, 75);
+            filter:brightness(75%);
+            background-size: cover;
+            text-align: center;
+        }
+        #contact h1{
+            font-size:3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: rgb(18, 6, 81);
+        
+        }
+        #contact section{
+            font-size:1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            Foodiee!
+        </div>
+        <div class="menu">
+            <a href="#aboutus">About Us</a>
+            <a href="#ourservice"> Menu</a>
+            <a href="#packages">Delivery</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="booking">
+            <a href="#">join us</a>
+        </div>
+        </nav>
+        <section class="caption">
+            <span><b></b>Foodiee adventures are the best adventures </span>
+            <h1> online food delivery</h1>
+            <br>
+            <a href="#">buy now!</a>
+          
+        </section>
+    
+     </header>
+    <section id="aboutus">
+        <div>
+        <h1>About Us</h1>
+        <h2></h2>
+        </div>
+        <section>
+            <p> Online food delivery services have revolutionized the way people enjoy meals.<br> With just a few taps on a smartphone or clicks on a computer, individuals can access a wide array of cuisines from local restaurants and national chains alike. This convenience has made it easier for busy professionals, families, and anyone with a craving to satisfy their hunger without leaving home.<br> Beyond convenience, online food delivery also fosters exploration of new flavors and supports local businesses by expanding their reach. It's not just about food arriving at the doorstep; it's about enhancing dining experiences and accommodating diverse lifestyles in today's fast-paced world.  <br> 
+            <ol></ol>  </ol>
+         </section>
+    </section>
+    <section id="ourservices">
+       
+            <h1> MENU</h1>
+            <section>
+                <p>   </p>
+                <p><b style="text-decoration: underline;">Veg</b></p>
+                <p><b>  chilli panneer </b> &emsp;&emsp;&emsp;&emsp;500/- 
+                </p><p><b>salsa panneer </b>&emsp;&emsp;&emsp;499/- </p>
+                <p><b> chilli mushroom</b>&emsp;&emsp;&emsp;&emsp;450/- </p>
+                <p><b>panneer biriyani plate </b>&emsp;&emsp;&emsp;&emsp;675/- </p>
+                <p><b style="text-decoration: underline;">Non-Veg</b></p>
+                <p><b>chilli chicken </b> &emsp;&emsp;&emsp;499/- </p>
+                <p><b>kadai chicken </b>&emsp;&emsp;&emsp;&emsp;499/-</p>
+                <p><b> chicken biriyani plate</b>&emsp;&emsp;&emsp;&emsp;699/-  </p>
+             </section>
+    </section>
+    <section id="packages">
+        <h1>Delivery</h1>
+       
+        <p >  With just a few taps on a smartphone or clicks on a computer, individuals can access a wide array of cuisines from local restaurants and national chains alike.<br> This convenience has made it easier for busy professionals, families, and anyone with a craving to satisfy their hunger without leaving home.<br> Beyond convenience, online food delivery also fosters exploration of new flavors and supports local businesses by expanding their reach.<br> It's not just about food arriving at the doorstep; it's about enhancing dining experiences and accommodating diverse lifestyles in today's fast-paced world.
+
+           
+        </p> 
+      
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <section style="color: aliceblue;">
+            <p>For any kind of queries,do reach us.Dial <b style="color: rgb(244, 4, 4);">0000000000 .</b></p>
+            <p>Customer care services on above number are available 24 hours.</p>
+            <p><b style="text-decoration: underline;color:rgb(73, 7, 116)">Locations:</b></p>
+            <p>Hitech city,Hyderabad,Telangana.</p>
+            <p>Bandra,Mumbai,Maharastra.</p>
+            <p>Hanmakonda,Warangal,Telangana.</p>
+            <p>Chennai central,Chennai,Tamil Nadu.</p> 
+            <p></p>
+        </section>
+    </section>
+</body>
+</html>
